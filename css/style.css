@@ -1,0 +1,241 @@
+:root {
+	--polla-background: #f2f2f2;
+	--polla-main: #56042C;
+	--polla-main-2: #8b1638;
+	--polla-main-3: #ff004c;
+	--polla-secondary: #0ca9a1;
+	--polla-secondary-hover: #41ebe2;
+	--polla-text: #eeeee4;
+}
+
+@font-face {
+    font-family: "Polla";
+    font-style: normal;
+    font-weight: normal;
+    src: local("?"), url("../fonts/Qatar2022Arabic-Bold.ttf") format("truetype");
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	background-color: var(--polla-background) !important;
+	font-family: 'Lato', sans-serif !important;
+}
+
+.container-fluid {
+	margin-bottom: 60px !important; 
+}
+
+.polla-text {
+	font-family: Polla;
+}
+
+.polla-titulo {
+	color: var(--polla-main);
+}
+
+.link {
+	color: var(--polla-main-3);
+	text-decoration: none;
+}
+
+.link:hover, .link:focus {
+	color: var(--polla-secondary-hover);
+	text-decoration: none;
+}
+
+.nav-link {
+	color: var(--polla-secondary) !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+	color: var(--polla-main-3) !important;
+	text-decoration: none;
+}
+
+.badge-polla {
+    color: var(--polla-text) !important;
+    background-color: var(--polla-main);
+}
+
+.flags {
+	margin-bottom: 5px;
+	margin-top: 1px;
+}
+
+.label {
+	display: inline-block !important;
+}
+
+.thead-polla {
+	background-color: var(--polla-main-2) !important;
+	color: var(--polla-text) !important;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color: rgba(255, 255, 255, 0.35);
+ }
+
+#posiciones-table tr td:first-child {
+	font-weight: bold;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+	grid-auto-rows: 200px;
+	grid-gap: 20px;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+.card {
+	border: 0px !important;
+    border-radius: 6px !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+    cursor: pointer;
+    text-align: center;
+	position: relative;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)), url("../resources/logo.png");
+	background-position: 50% 65%;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+
+.card:hover .caption {
+	opacity: 1;
+}
+
+.name {
+	z-index: 100;
+  	background: var(--polla-main);
+  	color: var(--polla-text);
+	height: 30px;
+	line-height: 30px;  
+	border-radius: 6px;
+  	border-bottom-left-radius:0;
+	border-bottom-right-radius:0;
+	border-left: 10px var(--polla-main-2) solid;
+	border-right: 10px var(--polla-main-3) solid;
+}
+
+.caption {
+	cursor: pointer;
+	position: absolute;
+	opacity: 0;
+	-webkit-transition:all 0.45s ease-in-out;
+	-moz-transition:all 0.45s ease-in-out;
+	-o-transition:all 0.45s ease-in-out;
+	-ms-transition:all 0.45s ease-in-out;
+	transition:all 0.45s ease-in-out;
+}
+
+.blur { 
+	background-color: rgba(0,0,0,0.65);
+	height: 200px;
+	width: 200px;
+	z-index: 5;
+    border-radius: 6px;
+	position: absolute;
+}
+
+.caption-text {
+	z-index: 10;
+	color: var(--polla-text) !important;
+	position: absolute;
+	width: 200px;
+	height: 175px;
+	line-height: 115px;
+	text-align: center;
+	top:50px;
+}
+
+footer {
+	color: var(--polla-text) !important;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: var(--polla-main);
+}
+
+@media (max-width: 576px) {
+	.nav-polla {
+		font-size: 14px;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 140px);
+		grid-auto-rows: 140px;
+		grid-gap: 20px;
+		justify-content: center;
+		padding-bottom: 40px;
+	}
+
+	.card {
+		border: 0px !important;
+		border-radius: 6px !important;
+		box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+		cursor: pointer;
+		text-align: center;
+		position: relative;
+		background-image: linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)), url("../resources/logo.png");
+		background-position: 50% 75%;
+		background-repeat: no-repeat;
+		background-size: 50%;
+	}
+
+	.blur { 
+		background-color: rgba(0,0,0,0.65);
+		height: 140px;
+		width: 140px;
+		z-index: 5;
+		border-radius: 6px;
+		position: absolute;
+	}
+	
+	.caption-text {
+		z-index: 10;
+		font-size: 12px;
+		color: var(--polla-text) !important;
+		position: absolute;
+		width: 140px;
+		height: 70px;
+		line-height: 70px;
+		text-align: center;
+		top:50px;
+	}
+
+	.blur { 
+		background-color: rgba(0,0,0,0.65);
+		height: 140px;
+		width: 140px;
+		z-index: 5;
+		border-radius: 6px;
+		position: absolute;
+	}
+
+	.name {
+		z-index: 100;
+		font-size: 12px;
+		background: var(--polla-main);
+		color: var(--polla-text);
+		height: 30px;
+		line-height: 30px;  
+		border-radius: 6px;
+		border-bottom-left-radius:0;
+		border-bottom-right-radius:0;
+		border-left: 7px var(--polla-main-2) solid;
+		border-right: 7px var(--polla-main-3) solid;
+	}
+}
