@@ -11,8 +11,10 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        security: loose
         server: ${{ secrets.ftp_polla_server }}
         username: ${{ secrets.ftp_polla_username }}
         password: ${{ secrets.ftp_polla_password }}
         server-dir: /home/saimyr/public_html/polla/
+        exclude: |
+          **/.git*
+          **/.git*/**
