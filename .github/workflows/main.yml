@@ -15,4 +15,4 @@ jobs:
         server: ${{ secrets.ftp_polla_server }}
         username: ${{ secrets.ftp_polla_username }}
         password: ${{ secrets.ftp_polla_password }}
-        server-dir: /home/saimyr/public_html/polla
+        server-dir: /home/saimyr/public_html/polla/
