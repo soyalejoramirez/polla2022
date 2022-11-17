@@ -1,327 +1,380 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css?version=1.0.1">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-		<link rel="shortcut icon" href="resources/favicon.ico"></link>
-		<title>Polla Qatar 2022</title>
-	</head>
-	<body class="fondo">
-		<div class="container">
-			<div class="pb-2 mt-4 mb-2">
-				<h2 class="polla-titulo polla-text text-center">POLLA SAIMYRIANA MUNDIAL DE QATAR 2022</h2>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?version=1.0.1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon" href="resources/favicon.ico">
+	</link>
+	<title>Polla Qatar 2022</title>
+</head>
+
+<body class="fondo">
+	<div class="container">
+		<div class="pb-2 mt-4 mb-2">
+			<h2 class="polla-titulo polla-text text-center">POLLA SAIMYRIANA MUNDIAL DE QATAR 2022</h2>
+		</div>
+		<div class="row">
+			<div class="col">
+				<ul id="pollaTab" class="nav nav-tabs nav-polla polla-text" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="posiciones-tab" data-bs-toggle="tab"
+							href="#posiciones">Posiciones</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="reglas-tab" data-bs-toggle="tab" href="#reglas">Reglas</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="premios-tab" data-bs-toggle="tab" href="#premios">Premios</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="pollas-tab" data-bs-toggle="tab" href="#pollas">Pollas</a>
+					</li>
+				</ul>
 			</div>
-			<div class="row">
-				<div class="col">
-					<ul id="pollaTab" class="nav nav-tabs nav-polla polla-text" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="posiciones-tab" data-bs-toggle="tab" href="#posiciones">Posiciones</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="reglas-tab" data-bs-toggle="tab" href="#reglas">Reglas</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="premios-tab" data-bs-toggle="tab" href="#premios">Premios</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="pollas-tab" data-bs-toggle="tab" href="#pollas">Pollas</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<div class="tab-content">
-						<div id="posiciones" class="tab-pane fade show active" role="tabpanel" aria-labelledby="posiciones-tab">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-md-6 col-6 mt-3 mb-1">
-										<h3 class="polla-text">Tabla de Posiciones</h3>
-									</div>
-									<div class="col-md-6 col-6">
-										<h5 class="float-end mt-4 mt-md-2">
-											<span class="badge badge-polla">
-												<div class="flags">
-													<span class="fi fi-qa"></span>
-													-
-													<span class="fi fi-ec"></span>
-												</div>
-												20/11 11:00 AM
-											</span>
-										</h5>
-									</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="tab-content">
+					<div id="posiciones" class="tab-pane fade show active" role="tabpanel"
+						aria-labelledby="posiciones-tab">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-6 col-6 mt-3 mb-1">
+									<h3 class="polla-text">Tabla de Posiciones</h3>
 								</div>
-								<div class="row">
-									<div class="col-md-12 col-12">
-										<div class="table-responsive">
-											<table id="posiciones-table" class="table table-striped">
-												<thead class="thead-polla polla-text">
-													<tr>
-														<th scope="col">#</th>
-														<th scope="col">Pollero (a)</th>
-														<th scope="col">Puntos</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-        <td>1</td>
-        <td>Aleida Montoya</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Alejandro Ramírez</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Carlos Álvarez</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>Carolina Quintero</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Cesar Peláez</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Daniela Espinosa</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>David Ocampo</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Edison Franco</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Elena Arcila</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Emily Álvarez</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>Ferrinson Franco</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>Javier Quintero</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>Jorge Londoño</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>Juan David Gomez</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>15</td>
-        <td>Juan David Rodriguez</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>16</td>
-        <td>Juan Esteban Castaño</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>17</td>
-        <td>Ligia Hernández</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>18</td>
-        <td>Mateo Peláez</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>19</td>
-        <td>Matias Durango</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>20</td>
-        <td>Pablo Henao</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>21</td>
-        <td>Wbeimar Quintero</td>
-        <td>6</td>
-    </tr>
-    <tr>
-        <td>22</td>
-        <td>Yaritza Marín</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>23</td>
-        <td>Yonatan Morales</td>
-        <td>d</td>
-    </tr>
-												</tbody>
-											</table>
-										</div>
+								<div class="col-md-6 col-6">
+									<h5 class="float-end mt-4 mt-md-2">
+										<span class="badge badge-polla">
+											<div class="flags">
+												<span class="fi fi-qa"></span>
+												-
+												<span class="fi fi-ec"></span>
+											</div>
+											20/11 11:00 AM
+										</span>
+									</h5>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 col-12">
+									<div class="table-responsive">
+										<table id="posiciones-table" class="table table-striped">
+											<thead class="thead-polla polla-text">
+												<tr>
+													<th scope="col">#</th>
+													<th scope="col">Pollero (a)</th>
+													<th scope="col">Puntos</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>Aleida Montoya</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>Alejandro Ramírez</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>Carlos Álvarez</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>Carolina Quintero</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>Cesar Peláez</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>6</td>
+													<td>Daniela Espinosa</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>7</td>
+													<td>David Ocampo</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>8</td>
+													<td>Edison Franco</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>9</td>
+													<td>Elena Arcila</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>10</td>
+													<td>Emily Álvarez</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>Ferrinson Franco</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>Javier Quintero</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>13</td>
+													<td>Jorge Londoño</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>14</td>
+													<td>Juan David Gomez</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>15</td>
+													<td>Juan David Rodriguez</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>16</td>
+													<td>Juan Esteban Castaño</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>17</td>
+													<td>Ligia Hernández</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>18</td>
+													<td>Mateo Peláez</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>19</td>
+													<td>Matias Durango</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>20</td>
+													<td>Pablo Henao</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>21</td>
+													<td>Wbeimar Quintero</td>
+													<td>6</td>
+												</tr>
+												<tr>
+													<td>22</td>
+													<td>Yaritza Marín</td>
+													<td>0</td>
+												</tr>
+												<tr>
+													<td>23</td>
+													<td>Yonatan Morales</td>
+													<td>0</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div id="reglas" class="tab-pane fade" role="tabpanel" aria-labelledby="reglas-tab">
-							<div class="container-fluid">
-								<h3 class="polla-text mt-3 mb-3">Sistema de puntos</h3>
-								<div class="table-responsive">
-									<table class="table table-striped">
-										<thead class="thead-polla polla-text">
-											<tr>
-												<th scope="col">Descripción</th>
-												<th scope="col">Puntos</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr><td>Acertar resultado sin marcador en primera fase</td><th scope="row">2</th></tr>
-												<tr><td>Acertar resultado <b>con marcador exacto</b> en primera fase</td><th scope="row">4</th></tr>
-												<tr><td>Acertar resultado sin marcador en fase eliminatoria</td><th scope="row">6</th></tr>
-												<tr><td>Acertar resultado <b>con marcador exacto</b> en fase eliminatoria</td><th scope="row">8</th></tr>
-												<tr><td>Acertar equipo clasificado a Octavos de Final sin posición exacta</td><th scope="row">8</th></tr>
-												<tr><td>Acertar equipo clasificado a Octavos de Final <b>con posición</b> exacta</td><th scope="row">10</th></tr>
-												<tr><td>Acertar equipo clasificado a Cuartos de Final</td><th scope="row">13</th></tr>
-												<tr><td>Acertar equipo clasificado a Semifinal</td><th scope="row">15</th></tr>
-												<tr><td>Acertar equipo clasificado a Final</td><th scope="row">20</th></tr>
-												<tr><td>Acertar el equipo que se ubica en el cuarto puesto</td><th scope="row">15</th></tr>
-												<tr><td>Acertar el equipo que se ubica en el tercer puesto</td><th scope="row">18</th></tr>
-												<tr><td>Acertar el equipo subcampeón</td><th scope="row">25</th></tr>
-												<tr><td>Acertar el equipo campeón</td><th scope="row">40</th></tr>
-												<tr><td>Acertar al goleador</td><th scope="row">25</th></tr>
-										</tbody>
-									</table>
-								</div>
-								<div class="pb-2">A partir de Octavos de Final:
-									<ul>
-										<li>Sí (Y únicamente sí) aciertas los dos equipos que se enfrentan, tendrás la posibilidad de sumar puntos por acertar el resultado y el marcador.</li>
-										<li>Sólo se tendrá en cuenta el marcador del partido incluyendo el tiempo extra (sí aplica), pero sin considerar los penaltis.</li>
-									</ul>
+					</div>
+					<div id="reglas" class="tab-pane fade" role="tabpanel" aria-labelledby="reglas-tab">
+						<div class="container-fluid">
+							<h3 class="polla-text mt-3 mb-3">Sistema de puntos</h3>
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead class="thead-polla polla-text">
+										<tr>
+											<th scope="col">Descripción</th>
+											<th scope="col">Puntos</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Acertar resultado sin marcador en primera fase</td>
+											<th scope="row">2</th>
+										</tr>
+										<tr>
+											<td>Acertar resultado <b>con marcador exacto</b> en primera fase</td>
+											<th scope="row">4</th>
+										</tr>
+										<tr>
+											<td>Acertar resultado sin marcador en fase eliminatoria</td>
+											<th scope="row">6</th>
+										</tr>
+										<tr>
+											<td>Acertar resultado <b>con marcador exacto</b> en fase eliminatoria</td>
+											<th scope="row">8</th>
+										</tr>
+										<tr>
+											<td>Acertar equipo clasificado a Octavos de Final sin posición exacta</td>
+											<th scope="row">8</th>
+										</tr>
+										<tr>
+											<td>Acertar equipo clasificado a Octavos de Final <b>con posición</b> exacta
+											</td>
+											<th scope="row">10</th>
+										</tr>
+										<tr>
+											<td>Acertar equipo clasificado a Cuartos de Final</td>
+											<th scope="row">13</th>
+										</tr>
+										<tr>
+											<td>Acertar equipo clasificado a Semifinal</td>
+											<th scope="row">15</th>
+										</tr>
+										<tr>
+											<td>Acertar equipo clasificado a Final</td>
+											<th scope="row">20</th>
+										</tr>
+										<tr>
+											<td>Acertar el equipo que se ubica en el cuarto puesto</td>
+											<th scope="row">15</th>
+										</tr>
+										<tr>
+											<td>Acertar el equipo que se ubica en el tercer puesto</td>
+											<th scope="row">18</th>
+										</tr>
+										<tr>
+											<td>Acertar el equipo subcampeón</td>
+											<th scope="row">25</th>
+										</tr>
+										<tr>
+											<td>Acertar el equipo campeón</td>
+											<th scope="row">40</th>
+										</tr>
+										<tr>
+											<td>Acertar al goleador</td>
+											<th scope="row">25</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pb-2">A partir de Octavos de Final:
+								<ul>
+									<li>Sí (Y únicamente sí) aciertas los dos equipos que se enfrentan, tendrás la
+										posibilidad de sumar puntos por acertar el resultado y el marcador.</li>
+									<li>Sólo se tendrá en cuenta el marcador del partido incluyendo el tiempo extra (sí
+										aplica), pero sin considerar los penaltis.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="premios" class="tab-pane fade" role="tabpanel" aria-labelledby="premios-tab">
+						<div class="container-fluid">
+							<h3 class="polla-text mt-3 mb-3">Premios</h3>
+							<p>Una vez terminada la Copa Mundial de la FIFA Qatar 2022 los ganadores podrán reclamar su
+								premio. El total del dinero recaudado se destinará de la siguiente manera:</p>
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<tr>
+										<td>Primer Puesto</td>
+										<th scope="row">El resto del dinero recogido</th>
+									</tr>
+									<tr>
+										<td>Segundo puesto</td>
+										<th scope="row">$ 200.000</th>
+									</tr>
+									<tr>
+										<td>Tercer puesto</td>
+										<th scope="row">$ 150.000</th>
+									</tr>
+									<tr>
+										<td>Administración de la Polla</td>
+										<th scope="row">$ 50.000</th>
+									</tr>
+								</table>
+							</div>
+							<div class="pb-2">
+								<div class="alert alert-warning" role="alert">
+									<b>NOTA IMPORTANTE:</b> Sí se presenta un empate en alguno de los tres primeros
+									puestos, se divide el dinero entre las personas empatadas en la posición implicada.
 								</div>
 							</div>
 						</div>
-						<div id="premios" class="tab-pane fade" role="tabpanel" aria-labelledby="premios-tab">
-							<div class="container-fluid">
-								<h3 class="polla-text mt-3 mb-3">Premios</h3>
-								<p>Una vez terminada la Copa Mundial de la FIFA Qatar 2022 los ganadores podrán reclamar su premio. El total del dinero recaudado se destinará de la siguiente manera:</p>
-								<div class="table-responsive">
-									<table class="table table-striped">
-										<tr>
-											<td>Primer Puesto</td>
-											<th scope="row">El resto del dinero recogido</th>
-										</tr>
-										<tr>
-											<td>Segundo puesto</td>
-											<th scope="row">$ 200.000</th>
-										</tr>
-										<tr>
-											<td>Tercer puesto</td>
-											<th scope="row">$ 150.000</th>
-										</tr>
-										<tr>
-											<td>Administración de la Polla</td>
-											<th scope="row">$ 50.000</th>
-										</tr>
-									</table>
-								</div>
-								<div class="pb-2">
-									<div class="alert alert-warning" role="alert">
-										<b>NOTA IMPORTANTE:</b> Sí se presenta un empate en alguno de los tres primeros puestos, se divide el dinero entre las personas empatadas en la posición implicada.
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="pollas" class="tab-pane fade" role="tabpanel" aria-labelledby="pollas-tab">
-							<div class="container-fluid">
-								<h3 class="polla-text mt-3 mb-3">Pollas</h3>
-								<!-- <div class="pb-2">
+					</div>
+					<div id="pollas" class="tab-pane fade" role="tabpanel" aria-labelledby="pollas-tab">
+						<div class="container-fluid">
+							<h3 class="polla-text mt-3 mb-3">Pollas</h3>
+							<!-- <div class="pb-2">
 									<div class="alert alert-warning" style="text-align: center" role="alert">
 										Antes de iniciar la Copa Mundial de la FIFA Qatar 2022 podrás ver y descargar la polla de todos los participantes.
 									</div>
 								</div> -->
-								<div class="grid polla-text">
-									<div class="card">
-										<div class="name">TODAS</div>
-										<div class="caption">
-											<a href="./resources/pollas/pollas.pdf" target="_blank">
-												<div class="blur"></div>
-												<div class="caption-text">
-													<p>Ver todas las pollas</p>
-												</div>
-											</a>
-										</div>
+							<div class="grid polla-text">
+								<div class="card">
+									<div class="name">TODAS</div>
+									<div class="caption">
+										<a href="./resources/pollas/pollas.pdf" target="_blank">
+											<div class="blur"></div>
+											<div class="caption-text">
+												<p>Ver todas las pollas</p>
+											</div>
+										</a>
 									</div>
-									<div class="card">
-										<div class="name">Cesar Peláez</div>
-										<div class="caption">
-											<a href="./resources/pollas/cesar_pelaez.pdf" target="_blank">
-												<div class="blur"></div>
-												<div class="caption-text">
-													<p>Ver polla de Cesar</p>
-												</div>
-											</a>
-										</div>
+								</div>
+								<div class="card">
+									<div class="name">Cesar Peláez</div>
+									<div class="caption">
+										<a href="./resources/pollas/cesar_pelaez.pdf" target="_blank">
+											<div class="blur"></div>
+											<div class="caption-text">
+												<p>Ver polla de Cesar</p>
+											</div>
+										</a>
 									</div>
-									<div class="card">
-										<div class="name">Diego Ramírez</div>
-										<div class="caption">
-											<a href="./resources/pollas/diego_ramirez.pdf" target="_blank">
-												<div class="blur"></div>
-												<div class="caption-text">
-													<p>Ver polla de Diego</p>
-												</div>
-											</a>
-										</div>
+								</div>
+								<div class="card">
+									<div class="name">Diego Ramírez</div>
+									<div class="caption">
+										<a href="./resources/pollas/diego_ramirez.pdf" target="_blank">
+											<div class="blur"></div>
+											<div class="caption-text">
+												<p>Ver polla de Diego</p>
+											</div>
+										</a>
 									</div>
-									<div class="card">
-										<div class="name">Mateo Peláez</div>
-										<div class="caption">
-											<a href="./resources/pollas/mateo_pelaez.pdf" target="_blank">
-												<div class="blur"></div>
-												<div class="caption-text">
-													<p>Ver polla de Mateo</p>
-												</div>
-											</a>
-										</div>
+								</div>
+								<div class="card">
+									<div class="name">Mateo Peláez</div>
+									<div class="caption">
+										<a href="./resources/pollas/mateo_pelaez.pdf" target="_blank">
+											<div class="blur"></div>
+											<div class="caption-text">
+												<p>Ver polla de Mateo</p>
+											</div>
+										</a>
 									</div>
-									<div class="card">
-										<div class="name">Rodrigo Álvarez</div>
-										<div class="caption">
-											<a href="./resources/pollas/rodrigo_alvarez.pdf" target="_blank">
-												<div class="blur"></div>
-												<div class="caption-text">
-													<p>Ver polla de Rodrigo</p>
-												</div>
-											</a>
-										</div>
+								</div>
+								<div class="card">
+									<div class="name">Rodrigo Álvarez</div>
+									<div class="caption">
+										<a href="./resources/pollas/rodrigo_alvarez.pdf" target="_blank">
+											<div class="blur"></div>
+											<div class="caption-text">
+												<p>Ver polla de Rodrigo</p>
+											</div>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -330,13 +383,18 @@
 				</div>
 			</div>
 		</div>
-		<footer class="footer">
-			<div class="container">
-				<span>
-					@soyAlejoRamirez - <a href="http://www.gnu.org/licenses/gpl-3.0-standalone.html" class="link" target="_blank">GNU GPL versión 3</a>
-				</span>
-			</div>
-		</footer>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-	</body>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<span>
+				@soyAlejoRamirez - <a href="http://www.gnu.org/licenses/gpl-3.0-standalone.html" class="link"
+					target="_blank">GNU GPL versión 3</a>
+			</span>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
